@@ -23,7 +23,7 @@ public class methods1 {
         System.out.println((s==s1));//true
         System.out.println(s2.equals(s));//true
         System.out.println((s2==s));/*false because it checks reference of a literal even though they
-        are same but their reference is different
+        are same but their reference is different*/
 
     }
 }
