@@ -1,12 +1,18 @@
+import java.util.Scanner;
+
 public class regular_expression {
     public static void main(String[] args) {
-        String str="programmer@gmail.com",username,domainname,check;
+        String id,username,domainname,check;
         int i;
-       if(str.matches("\\w*@gmail.com")) {
-           i = str.indexOf("@");
-           username = str.substring(0, i);
+        Scanner str=new Scanner(System.in);
+        System.out.println("enter your mail:");
+        id= str.nextLine();
+       // System.out.println(id);
+       if(id.matches("\\w*@gmail.com")) {
+           i = id.indexOf("@");
+           username = id.substring(0, i);
            System.out.println("username is: " + username);
-           domainname = str.substring(i + 1, str.length());
+           domainname = id.substring(i + 1, id.length());
            System.out.println("domainname is: " + domainname);
        }
        else{
